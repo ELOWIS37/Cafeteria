@@ -2,11 +2,12 @@ package com.elowis.cafeteria
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -28,15 +29,24 @@ class LoginActivity : AppCompatActivity() {
 
         // Botó Submit
         btn_submit.setOnClickListener {
-            val user_name = et_user_name.text;
-            var password = et_password.text;
+            val user_name = et_user_name.text.toString();
+            var password = et_password.text.toString();
+            var intentValue = intent.getStringExtra("Password")
+             findViewById<TextView>(R.id.textView6).apply {
+                text = intentValue.toString()
+            }
+
+            var text = findViewById(R.id.textView6) as TextView
             if (password.equals("")){
                 Toast.makeText(this@LoginActivity, "Introdueix una Contrassenya", Toast.LENGTH_LONG).show()
             }
-            else{
+            if (password.equals(password)){
                 var welcome = "Benvingut " + user_name
                 Toast.makeText(this@LoginActivity,  welcome, Toast.LENGTH_LONG).show()
                 startActivity(Intent(this, MainActivity::class.java))
+            }
+            else {
+                Toast.makeText(this@LoginActivity,  "Contrassenya o Usuari Incorrecte", Toast.LENGTH_LONG).show()
             }
 
         }

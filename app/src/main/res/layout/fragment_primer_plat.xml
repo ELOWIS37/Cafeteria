@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".primerPlat"
-        android:background="@color/orange">
+        android:background="#CCDDDB">
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Esmorzars"
+            android:text="Plats Recomenats"
             android:layout_marginTop="160dp"
             android:layout_marginLeft="30dp"
             android:textSize="28sp"
@@ -104,6 +104,11 @@
             android:layout_marginLeft="265sp"
             android:layout_marginTop="350dp" />
 
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp" />
 
     </FrameLayout>
 </layout>

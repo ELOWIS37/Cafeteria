@@ -2,4 +2,13 @@
     <string name="app_name">Cafeteria</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="PrimerPlat">
+        <item>Patates Braves</item>
+        <item>Empanadilles</item>
+        <item>Alites de Pollastre</item>
+        <item>Gambes a la Plantxa</item>
+        <item>Croquetes de Pernil</item>
+    </string-array>
+
 </resources>

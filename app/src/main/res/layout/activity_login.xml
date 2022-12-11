@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:background="@color/orange"
+        android:background="#CCDDDB"
         android:padding="25dp"
         android:orientation="vertical">
         <TextView
@@ -30,6 +30,7 @@
             android:textSize="25dp"
             android:textColor="#6dffbf"
             android:padding="30dp"
+            android:textStyle="bold"
             android:text="Login"/>
 
         <EditText
@@ -73,6 +74,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
